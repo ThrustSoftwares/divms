@@ -103,7 +103,7 @@
     </div>
 
     <div class="footer">
-        &copy; {{ date('Y') }} Jinja Road Police Division. DIVMS Public Portal.
+        &copy; {{ date('Y') }} Jinja Road Police Division. IVMIS Public Portal.
     </div>
 </body>
 </html>

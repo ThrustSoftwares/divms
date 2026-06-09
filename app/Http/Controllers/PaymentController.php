@@ -12,6 +12,25 @@ use Illuminate\Support\Facades\DB;
 
 class PaymentController extends Controller
 {
+    public function index(Request $request)
+    {
+        $query = Payment::with(['vehicle.owner', 'fine', 'receivedBy'])
+            ->orderBy('created_at', 'desc');
+
+        if ($request->has('search') && $request->search) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->whereHas('vehicle', function ($q) use ($search) {
+                    $q->where('plate_number', 'like', "%{$search}%");
+                })->orWhere('receipt_number', 'like', "%{$search}%");
+            });
+        }
+
+        $payments = $query->paginate(15);
+
+        return view('payments.index', compact('payments'));
+    }
+
     public function create(Vehicle $vehicle)
     {
         $vehicle->load(['fine', 'owner']);

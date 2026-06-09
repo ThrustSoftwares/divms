@@ -43,6 +43,7 @@ Route::middleware(['auth', 'role'])->group(function () {
 
     // Payments (Finance + Admin)
     Route::middleware('role:admin,finance_officer')->group(function () {
+        Route::get('/payments',                [PaymentController::class, 'index'])->name('payments.index');
         Route::get('/vehicles/{vehicle}/payment',   [PaymentController::class, 'create'])->name('payments.create');
         Route::post('/vehicles/{vehicle}/payment',  [PaymentController::class, 'store'])->name('payments.store');
         Route::get('/payments/{payment}/receipt',   [PaymentController::class, 'receipt'])->name('payments.receipt');

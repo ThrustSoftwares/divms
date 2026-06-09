@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'DIVMS') — Jinja Road Police Division</title>
+    <title>@yield('title', 'IVMIS') — Jinja Road Police Division</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -22,7 +22,7 @@
             </svg>
         </div>
         <div>
-            <div class="brand-name">DIVMS</div>
+            <div class="brand-name">IVMIS</div>
             <div class="brand-sub">Jinja Road Police</div>
         </div>
     </div>
@@ -42,7 +42,7 @@
     @endif
 
     @if(auth()->user()->isAdmin() || auth()->user()->isFinance())
-    <a href="{{ route('reports.revenue') }}" class="sidebar-link {{ request()->routeIs('payments.*') ? 'active' : '' }}">
+    <a href="{{ route('payments.index') }}" class="sidebar-link {{ request()->routeIs('payments.*') ? 'active' : '' }}">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 010 7H6"/></svg>
         Payments
     </a>

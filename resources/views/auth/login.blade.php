@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login — DIVMS | Jinja Road Police Division</title>
+    <title>Login — IVMIS | Jinja Road Police Division</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -18,7 +18,7 @@
                 </svg>
             </div>
             <div>
-                <div class="auth-title">DIVMS</div>
+                <div class="auth-title">IVMIS</div>
                 <div class="auth-sub">Digital Impounded Vehicle Management System</div>
             </div>
         </div>
@@ -53,7 +53,7 @@
             </div>
             <button type="submit" class="btn btn-primary w-full" style="justify-content:center;padding:12px;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
-                Sign In to DIVMS
+                Sign In to IVMIS
             </button>
             <div style="text-align: center; margin-top: 16px;">
                 <a href="{{ route('public.index') }}" style="color: #1565C0; text-decoration: none; font-size: 0.9rem; font-weight: 500;">&larr; Return to Public Search Portal</a>
