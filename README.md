@@ -102,3 +102,8 @@ DIVMS is a secure, web-based platform designed to automate and streamline the ma
 
 ## 🛡️ License
 Professional software developed for the Uganda Police Force - Jinja Road Division.
+
+---
+
+## 📚 Additional Documentation
+For a full system overview, architecture, setup, and role details, see `ABOUT_DIVMS.md`.

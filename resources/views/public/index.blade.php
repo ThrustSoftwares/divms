@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Vehicle Search - DIVMS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <style>
         body { background-color: #f8fafc; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; margin:0;}
         .hero { background: linear-gradient(135deg, #1565C0, #0D47A1); color: white; padding: 80px 20px; text-align: center; position: relative;}
